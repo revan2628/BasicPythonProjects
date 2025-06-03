@@ -47,6 +47,7 @@ def game():
         while num == "" or num.isdigit() == False:
             webbrowser.open("https://youtu.be/edl_M_-RHzM?si=o3fMRQcHya-nVb9S")
             num = input(f"Please enter a number between {min_num} to {max_num}: ")
+        num = int(num)
     while num < number:
         num = input("Nope! you guessed lower, try something higher than what you've previously guessed: ")
         while num == "" or num.isdigit() == False:
